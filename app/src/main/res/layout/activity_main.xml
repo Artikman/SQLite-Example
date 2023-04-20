@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/id"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="@string/id"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/tvID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tvID" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/etID" />
+
+    <TextView
+        android:id="@+id/tvBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/brand"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+    <EditText
+        android:id="@+id/etBrand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/brand"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/tvBrand"
+        app:layout_constraintTop_toBottomOf="@id/etName" />
+
+    <TextView
+        android:id="@+id/tvTypeBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/type_body"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tvBrand" />
+
+    <EditText
+        android:id="@+id/etTypeBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/type_body"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/tvTypeBody"
+        app:layout_constraintTop_toBottomOf="@id/etBrand" />
+
+    <Button
+        android:id="@+id/insertBt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/insert"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCenter"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tvTypeBody" />
+
+    <Button
+        android:id="@+id/updateBt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/update"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineCenter"
+        app:layout_constraintTop_toBottomOf="@id/tvTypeBody" />
+
+    <Button
+        android:id="@+id/deleteBt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/delete"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCenter"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/insertBt" />
+
+    <Button
+        android:id="@+id/showBt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/show"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineCenter"
+        app:layout_constraintTop_toBottomOf="@id/updateBt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

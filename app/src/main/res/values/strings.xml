@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="brand">Brand</string>
+    <string name="type_body">Type Body</string>
+    <string name="insert">Insert</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="show">Show</string>
+</resources>

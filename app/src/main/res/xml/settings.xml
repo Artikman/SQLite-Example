@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="login"
+        android:summary="Введите логин"
+        android:title="Логин" />
+    <CheckBoxPreference
+        android:key="enabled"
+        android:summary="Отображать логин"
+        android:title="Отображать" />
+</PreferenceScreen>
